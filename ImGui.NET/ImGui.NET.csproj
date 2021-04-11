@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CBF04DC-FAA0-4181-965F-7AA85BC4C29C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImGui.NET</RootNamespace>
+    <AssemblyName>ImGui.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\lib\net45\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generated\ImColor.gen.cs" />
+    <Compile Include="Generated\ImDrawChannel.gen.cs" />
+    <Compile Include="Generated\ImDrawCmd.gen.cs" />
+    <Compile Include="Generated\ImDrawCornerFlags.gen.cs" />
+    <Compile Include="Generated\ImDrawData.gen.cs" />
+    <Compile Include="Generated\ImDrawList.gen.cs" />
+    <Compile Include="Generated\ImDrawListFlags.gen.cs" />
+    <Compile Include="Generated\ImDrawListSplitter.gen.cs" />
+    <Compile Include="Generated\ImDrawVert.gen.cs" />
+    <Compile Include="Generated\ImFont.gen.cs" />
+    <Compile Include="Generated\ImFontAtlas.gen.cs" />
+    <Compile Include="Generated\ImFontAtlasCustomRect.gen.cs" />
+    <Compile Include="Generated\ImFontAtlasFlags.gen.cs" />
+    <Compile Include="Generated\ImFontConfig.gen.cs" />
+    <Compile Include="Generated\ImFontGlyph.gen.cs" />
+    <Compile Include="Generated\ImFontGlyphRangesBuilder.gen.cs" />
+    <Compile Include="Generated\ImGui.gen.cs" />
+    <Compile Include="Generated\ImGuiBackendFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiButtonFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiCol.gen.cs" />
+    <Compile Include="Generated\ImGuiColorEditFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiComboFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiCond.gen.cs" />
+    <Compile Include="Generated\ImGuiConfigFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiDataType.gen.cs" />
+    <Compile Include="Generated\ImGuiDir.gen.cs" />
+    <Compile Include="Generated\ImGuiDockNodeFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiDragDropFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiFocusedFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiHoveredFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiInputTextCallbackData.gen.cs" />
+    <Compile Include="Generated\ImGuiInputTextFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiIO.gen.cs" />
+    <Compile Include="Generated\ImGuiKey.gen.cs" />
+    <Compile Include="Generated\ImGuiKeyModFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiListClipper.gen.cs" />
+    <Compile Include="Generated\ImGuiMouseButton.gen.cs" />
+    <Compile Include="Generated\ImGuiMouseCursor.gen.cs" />
+    <Compile Include="Generated\ImGuiNative.gen.cs" />
+    <Compile Include="Generated\ImGuiNavInput.gen.cs" />
+    <Compile Include="Generated\ImGuiOnceUponAFrame.gen.cs" />
+    <Compile Include="Generated\ImGuiPayload.gen.cs" />
+    <Compile Include="Generated\ImGuiPlatformIO.gen.cs" />
+    <Compile Include="Generated\ImGuiPlatformMonitor.gen.cs" />
+    <Compile Include="Generated\ImGuiPopupFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiSelectableFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiSizeCallbackData.gen.cs" />
+    <Compile Include="Generated\ImGuiSliderFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiStorage.gen.cs" />
+    <Compile Include="Generated\ImGuiStyle.gen.cs" />
+    <Compile Include="Generated\ImGuiStyleVar.gen.cs" />
+    <Compile Include="Generated\ImGuiTabBarFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiTabItemFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiTextBuffer.gen.cs" />
+    <Compile Include="Generated\ImGuiTextFilter.gen.cs" />
+    <Compile Include="Generated\ImGuiTextRange.gen.cs" />
+    <Compile Include="Generated\ImGuiTreeNodeFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiViewport.gen.cs" />
+    <Compile Include="Generated\ImGuiViewportFlags.gen.cs" />
+    <Compile Include="Generated\ImGuiWindowClass.gen.cs" />
+    <Compile Include="Generated\ImGuiWindowFlags.gen.cs" />
+    <Compile Include="ImDrawData.Manual.cs" />
+    <Compile Include="ImDrawList.Manual.cs" />
+    <Compile Include="ImGui.Manual.cs" />
+    <Compile Include="ImGuiSizeCallback.cs" />
+    <Compile Include="ImGuiTextEditCallback.cs" />
+    <Compile Include="ImVector.cs" />
+    <Compile Include="NullTerminatedString.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeAccessor.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets" Condition="Exists('..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets'))" />
+  </Target>
+</Project>
